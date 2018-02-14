@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header--title {
+  color: darkcyan;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.header--subtitle {
+  margin: 5px 0px;
+  text-align: center;
+  text-transform: uppercase;
+  color: darkslategrey;
+}
+
+.player {
+  display: grid;
+  justify-content: center;
+}
