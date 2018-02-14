@@ -21,9 +21,23 @@
       <p class="section--desc"> There will be our video player</p>
       <div class="player">
         <video id="video1" width="800" height="600">
-          <source src="./CSS Grid/11 - Spanning and Placing Cardio.mp4" type="video/mp4">
+          <source src="./videos/11 - Spanning and Placing Cardio.mp4" type="video/mp4">
         </video>
-        <button id="play">Play/Pause</button>
+        <section id="status">
+          <p>Playback rate is set at
+            <span id="playbackrate"></span>
+          </p>
+          <p>Volume is set at
+            <span id="volumerate"></span>
+          </p>
+        </section>
+        <div class="buttons">
+          <button id="play">Play</button>
+          <button id="speedup">Speed + 0.5</button>
+          <button id="speeddown">Speed - 0.5</button>
+          <button id="volumedown">Volume - </button>
+          <button id="volumeup">Volume +</button>
+        </div>
       </div>
     </section>
   </div>
