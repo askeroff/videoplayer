@@ -3,6 +3,17 @@
   padding: 0;
 }
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #666;
+  background: #333;
+}
+
+button {
+  outline: 0;
+}
+
 button:hover {
   cursor: pointer;
 }
@@ -18,12 +29,26 @@ button:hover {
   margin: 5px 0px;
   text-align: center;
   text-transform: uppercase;
-  color: darkslategrey;
+  color: darkcyan;
 }
 
 .player {
   display: grid;
   justify-content: center;
+}
+
+.player__video {
+  border: 8px solid #af2424;
+  padding: 0;
+  margin-top: 20px;
+  box-sizing: border-box;
+  border-bottom: none;
+}
+
+.player__status {
+  background: #194961;
+  color: #fff;
+  padding: 6px 10px;
 }
 
 .buttons {

@@ -8,6 +8,8 @@
   const playbackRate = document.querySelector('#playbackrate');
   const volumeRate = document.querySelector('#volumerate');
 
+  video.volume = 0.5;
+
   function showData() {
     playbackRate.innerHTML = video.playbackRate;
     volumeRate.innerHTML = video.volume * 100 + '%';
@@ -55,6 +57,7 @@
   showData();
 
   playButton.addEventListener('click', playPause);
+  video.addEventListener('click', playPause);
   speedUp.addEventListener('click', () => changeSpeed('up'));
   speedDown.addEventListener('click', () => changeSpeed('down'));
   volumeUp.addEventListener('click', () => changeVolume('up'));
