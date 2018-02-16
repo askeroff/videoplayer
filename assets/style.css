@@ -32,6 +32,16 @@ button:hover {
   color: darkcyan;
 }
 
+.upload {
+  display: grid;
+  background: #194961;
+  padding: 10px;
+  justify-content: center;
+  grid-gap: 10px;
+  color: #fff;
+  font-weight: bold;
+}
+
 .player {
   display: grid;
   justify-content: center;
@@ -43,6 +53,7 @@ button:hover {
   margin-top: 20px;
   box-sizing: border-box;
   border-bottom: none;
+  background: #fff;
 }
 
 .player__status {

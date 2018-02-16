@@ -1,4 +1,5 @@
 (function() {
+  const URL = window.URL || window.webkitURL;
   const video = document.querySelector('#video1');
   const playButton = document.querySelector('#play');
   const speedUp = document.querySelector('#speedup');
@@ -7,6 +8,7 @@
   const volumeDown = document.querySelector('#volumedown');
   const playbackRate = document.querySelector('#playbackrate');
   const volumeRate = document.querySelector('#volumerate');
+  const uploadButton = document.querySelector('#upload');
 
   video.volume = 0.5;
 
@@ -56,10 +58,16 @@
 
   showData();
 
+  function uploadVideo() {
+    const fileURL = URL.createObjectURL(this.files[0]);
+    video.src = fileURL;
+  }
+
   playButton.addEventListener('click', playPause);
   video.addEventListener('click', playPause);
   speedUp.addEventListener('click', () => changeSpeed('up'));
   speedDown.addEventListener('click', () => changeSpeed('down'));
   volumeUp.addEventListener('click', () => changeVolume('up'));
   volumeDown.addEventListener('click', () => changeVolume('down'));
+  uploadButton.addEventListener('change', uploadVideo, false);
 })();
